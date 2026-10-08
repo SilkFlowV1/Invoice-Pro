@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================
+     PRIMARY SEO META TAGS
+============================================ -->
+<title>Invoice Generator — Editable Invoice Template for Freelancers & Small Business | Invoice Pro</title>
+<meta name="description" content="Create professional invoices in 60 seconds. Editable HTML invoice generator with 6 templates, 12 color palettes, auto-calculating totals & one-click PDF export. No Excel. No subscription. One-time $19.">
+<meta name="keywords" content="invoice generator, editable invoice template, freelancer invoice, small business invoice, invoice maker, PDF invoice, invoice template HTML, digital invoice, invoice download, freelance tools, billing software, invoice software, invoice form, business invoice, invoice PDF, professional invoice">
+<meta name="author" content="Invoice Pro">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+<meta name="language" content="English">
+<meta name="revisit-after" content="7 days">
+<meta name="rating" content="general">
+<meta name="theme-color" content="#1E5EFF">
+
+<!-- Canonical URL — REPLACE with your actual domain -->
+<link rel="canonical" href="https://yourdomain.com/invoice-generator/">
+
+<!-- ============================================
+     OPEN GRAPH
+============================================ -->
+<meta property="og:type" content="product">
+<meta property="og:title" content="Invoice Pro — Editable Invoice Generator for Freelancers & Small Business">
+<meta property="og:description" content="Create a professional invoice in 60 seconds. 6 templates, 12 colors, auto-totals, one-click PDF. No Excel. No subscription. Just $19.">
+<meta property="og:image" content="https://yourdomain.com/images/invoice-pro-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Invoice Pro — Editable invoice generator preview">
+<meta property="og:url" content="https://yourdomain.com/invoice-generator/">
+<meta property="og:site_name" content="Invoice Pro">
+<meta property="og:locale" content="en_US">
+<meta property="product:price:amount" content="19.00">
+<meta property="product:price:currency" content="USD">
+<meta property="product:availability" content="in stock">
+
+<!-- ============================================
+     TWITTER CARD
+============================================ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Invoice Pro — Editable Invoice Generator">
+<meta name="twitter:description" content="Create professional invoices in 60 seconds. 6 templates, 12 colors, one-click PDF. Just $19 — one-time payment.">
+<meta name="twitter:image" content="https://yourdomain.com/images/invoice-pro-og.png">
+<meta name="twitter:image:alt" content="Invoice Pro — Editable invoice generator preview">
+<meta name="twitter:site" content="@yourtwitterhandle">
+<meta name="twitter:creator" content="@yourtwitterhandle">
+
+<!-- FAVICON -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%231E5EFF'/%3E%3Cpath d='M9 7h6M9 11h6M9 15h4' stroke='white' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<!-- PERFORMANCE HINTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://www.etsy.com">
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #EEF2F8;
+    color: #0B1E30;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  /* Skip link for accessibility */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #1E5EFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 0 0 8px 0;
+    font-weight: 700;
+    z-index: 999;
+    transition: top 0.2s;
+  }
+  .skip-link:focus { top: 0; }
+
+  /* Screen reader only */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* ============================================
+     TOP NAV
+  ============================================ */
+  nav.top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: saturate(180%) blur(14px);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    border-bottom: 1px solid #E6EEF8;
+    padding: 16px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: -0.02em;
+    color: #0B1E30;
+    text-decoration: none;
+  }
+  .logo-dot {
+    width: 10px;
+    height: 10px;
+    background: #1E5EFF;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(30,94,255,0.15);
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .nav-links a {
+    color: #3D637F;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .nav-links a:hover { color: #1E5EFF; }
+  .nav-cta {
+    background: #1E5EFF;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: all 0.15s;
+    box-shadow: 0 4px 14px -4px rgba(30,94,255,0.5);
+  }
+  .nav-cta:hover {
+    background: #1550E0;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px -4px rgba(30,94,255,0.6);
+  }
+
+  /* HERO */
+  .hero {
+    padding: 100px 40px 80px;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    position: relative;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: -100px -200px;
+    background: radial-gradient(circle at 30% 30%, rgba(30,94,255,0.08), transparent 60%);
+    z-index: -1;
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    padding: 8px 18px;
+    border-radius: 40px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #0B1E30;
+    box-shadow: 0 4px 14px rgba(0,20,40,0.06);
+    border: 1px solid #E6EEF8;
+    margin-bottom: 24px;
+  }
+  .hero-badge .dot {
+    width: 8px; height: 8px;
+    background: #1E5EFF;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(30,94,255,0.15);
+  }
+  .hero h1 {
+    font-size: 3.6rem;
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: #1E5EFF;
+  }
+  .hero p {
+    font-size: 1.15rem;
+    color: #3D637F;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    max-width: 520px;
+  }
+  .hero-cta {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+  .btn-primary {
+    background: #1E5EFF;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s;
+    box-shadow: 0 8px 24px -6px rgba(30,94,255,0.5);
+    border: none;
+    cursor: pointer;
+  }
+  .btn-primary:hover {
+    background: #1550E0;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px -6px rgba(30,94,255,0.6);
+  }
+  .btn-secondary {
+    background: white;
+    color: #0B1E30;
+    padding: 16px 32px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1.5px solid #DDE7F3;
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover {
+    border-color: #1E5EFF;
+    color: #1E5EFF;
+  }
+  .hero-proof {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.85rem;
+    color: #5C7C99;
+    font-weight: 500;
+  }
+  .stars { color: #F59E0B; letter-spacing: 2px; }
+
+  /* Hero preview */
+  .hero-visual {
+    position: relative;
+    height: 560px;
+  }
+  .hero-invoice {
+    position: absolute;
+    width: 100%;
+    max-width: 480px;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 40px 80px -20px rgba(0,30,80,0.3), 0 20px 40px rgba(0,0,0,0.08);
+    padding: 40px;
+    top: 0;
+    right: 0;
+    transform: rotate(-3deg);
+    transition: transform 0.4s;
+  }
+  .hero-invoice:hover { transform: rotate(0deg) translateY(-8px); }
+  .hero-invoice::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 8px;
+    background: linear-gradient(90deg, #1E5EFF, #4D8BFF, #8FB8FF);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+  .inv-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  .inv-logo {
+    width: 56px; height: 56px;
+    background: #EEF4FF;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 900;
+    color: #1E5EFF;
+  }
+  .inv-title {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #1E5EFF;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    text-align: right;
+    line-height: 1;
+  }
+  .inv-num {
+    font-size: 0.8rem;
+    color: #7A96B3;
+    margin-top: 4px;
+    text-align: right;
+  }
+  .inv-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #EEF3F9;
+    font-size: 0.9rem;
+    color: #4D6B88;
+  }
+  .inv-row strong { color: #0B1E30; }
+  .inv-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 3px solid #CDDEFF;
+    font-size: 1.1rem;
+  }
+  .inv-total span:first-child {
+    font-weight: 800;
+    color: #0B1E30;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    align-self: center;
+  }
+  .inv-total span:last-child {
+    font-weight: 900;
+    color: #1E5EFF;
+    font-size: 1.4rem;
+  }
+  .hero-chip {
+    position: absolute;
+    background: white;
+    padding: 12px 20px;
+    border-radius: 100px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #0B1E30;
+    box-shadow: 0 12px 32px -8px rgba(0,20,40,0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .hero-chip svg { width: 16px; height: 16px; color: #1E5EFF; }
+  .hero-chip.c1 { top: 20px; left: -10px; animation: float 4s ease-in-out infinite; }
+  .hero-chip.c2 { bottom: 60px; left: 20px; animation: float 5s ease-in-out infinite reverse; }
+  .hero-chip.c3 { bottom: 100px; right: -20px; animation: float 6s ease-in-out infinite; }
+
+  @keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* ============================================
+     PERFECT FOR — responsive icon grid
+  ============================================ */
+  .perfect-for {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 40px 40px 60px;
+    text-align: center;
+  }
+  .perfect-for-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #7A96B3;
+    font-weight: 700;
+    margin-bottom: 28px;
+  }
+  .perfect-for-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .perfect-for-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 12px;
+    background: white;
+    border: 1.5px solid #E6EEF8;
+    border-radius: 18px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #0B1E30;
+    letter-spacing: -0.01em;
+    transition: all 0.2s;
+    text-align: center;
+    line-height: 1.25;
+  }
+  .perfect-for-list li:hover {
+    border-color: #1E5EFF;
+    color: #1E5EFF;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px -10px rgba(30, 94, 255, 0.2);
+  }
+  .pf-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: #EEF4FF;
+    color: #1E5EFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.2s;
+  }
+  .pf-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .perfect-for-list li:hover .pf-icon {
+    background: #1E5EFF;
+    color: white;
+  }
+
+  section {
+    padding: 100px 40px;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  .section-head {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+  .section-head .eyebrow {
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #1E5EFF;
+    margin-bottom: 16px;
+  }
+  .section-head h2 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+  .section-head h2 em { font-style: normal; color: #1E5EFF; }
+  .section-head p {
+    font-size: 1.1rem;
+    color: #5C7C99;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Problem */
+  .problem { background: white; border-radius: 32px; padding: 80px 60px; box-shadow: 0 20px 60px -30px rgba(0,20,40,0.15); }
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+  }
+  .problem-card {
+    background: #FFF5F5;
+    border: 1.5px solid #FFCACA;
+    border-radius: 20px;
+    padding: 32px 28px;
+    transition: transform 0.2s;
+  }
+  .problem-card:hover { transform: translateY(-4px); }
+  .problem-icon {
+    width: 48px; height: 48px;
+    background: #FFCACA;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #B22222;
+    margin-bottom: 20px;
+  }
+  .problem-icon svg { width: 24px; height: 24px; }
+  .problem-card h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  .problem-card p {
+    font-size: 0.95rem;
+    color: #5C7C99;
+    line-height: 1.5;
+  }
+
+  /* Features */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+  .feature-card {
+    background: white;
+    border-radius: 20px;
+    padding: 36px 32px;
+    border: 1px solid #E6EEF8;
+    transition: all 0.25s;
+    position: relative;
+    overflow: hidden;
+  }
+  .feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #1E5EFF, #4D8BFF);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+  }
+  .feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 48px -20px rgba(0,30,80,0.15);
+    border-color: #CDDEFF;
+  }
+  .feature-card:hover::before { transform: scaleX(1); }
+  .feature-icon {
+    width: 56px; height: 56px;
+    background: #EEF4FF;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1E5EFF;
+    margin-bottom: 20px;
+  }
+  .feature-icon svg { width: 28px; height: 28px; }
+  .feature-card h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+  .feature-card p {
+    font-size: 0.95rem;
+    color: #5C7C99;
+    line-height: 1.55;
+  }
+
+  /* ============================================
+     COMPARISON — Why Invoice Pro
+     Fully responsive: 2 columns on desktop,
+     stacked with VS circle on mobile
+  ============================================ */
+  .compare-section {
+    padding: 100px 40px;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+
+  .comparison {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 32px;
+    align-items: stretch;
+    position: relative;
+    margin-top: 48px;
+  }
+
+  .compare-card {
+    border-radius: 24px;
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.2s;
+  }
+  .compare-card:hover { transform: translateY(-4px); }
+
+  .compare-card.old {
+    background: linear-gradient(180deg, #FFF5F5 0%, #FFE9E9 100%);
+    border: 1.5px solid #FFCACA;
+  }
+  .compare-card.new {
+    background: linear-gradient(180deg, #F5FAFF 0%, #EEF4FF 100%);
+    border: 1.5px solid #CDDEFF;
+    box-shadow: 0 20px 60px -30px rgba(30, 94, 255, 0.3);
+  }
+
+  .recommended-badge {
+    position: absolute;
+    top: -14px;
+    right: 32px;
+    background: #1E5EFF;
+    color: white;
+    font-size: 0.68rem;
+    font-weight: 800;
+    padding: 6px 14px;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 20px -6px rgba(30, 94, 255, 0.5);
+  }
+
+  /* Header block with emoji */
+  .compare-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .compare-emoji {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+  .compare-card.old .compare-emoji { background: #FFCACA; }
+  .compare-card.new .compare-emoji { background: #CDDEFF; }
+
+  .compare-header h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 4px;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+  .compare-card.old h3 { color: #B22222; }
+  .compare-card.new h3 { color: #1E5EFF; }
+
+  .compare-header .sub {
+    font-size: 0.85rem;
+    color: #5C7C99;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* List */
+  .compare-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 0;
+    margin: 0;
+  }
+  .compare-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: #0B1E30;
+    line-height: 1.4;
+  }
+  .compare-list li > span:last-child {
+    padding-top: 2px;
+  }
+
+  .check {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .check.x { background: #FFCACA; color: #B22222; }
+  .check.v { background: #B8EAC8; color: #16A34A; }
+  .check svg { width: 14px; height: 14px; }
+
+  /* VS divider — centered on desktop, shown on mobile too */
+  .compare-vs {
+    align-self: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #0B1E30;
+    color: white;
+    font-size: 1rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.3);
+    border: 6px solid #EEF2F8;
+    flex-shrink: 0;
+  }
+
+  /* Pulse animation for the new card (respects reduced motion) */
+  @media (prefers-reduced-motion: no-preference) {
+    .compare-card.new {
+      animation: comparePulse 3s ease-in-out infinite;
+    }
+    @keyframes comparePulse {
+      0%, 100% { box-shadow: 0 20px 60px -30px rgba(30, 94, 255, 0.3); }
+      50% { box-shadow: 0 20px 60px -20px rgba(30, 94, 255, 0.5); }
+    }
+  }
+
+  /* Steps */
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+  }
+  .step {
+    text-align: center;
+    position: relative;
+  }
+  .step-num {
+    width: 64px; height: 64px;
+    background: #1E5EFF;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0 auto 20px;
+    box-shadow: 0 12px 24px -8px rgba(30,94,255,0.5);
+  }
+  .step h3 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  .step p {
+    font-size: 0.92rem;
+    color: #5C7C99;
+    line-height: 1.55;
+  }
+
+  /* Pricing */
+  .pricing {
+    background: linear-gradient(135deg, #0B1E30 0%, #112B4F 100%);
+    border-radius: 32px;
+    padding: 80px 60px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0 40px;
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pricing::before {
+    content: '';
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(30,94,255,0.4), transparent 70%);
+    border-radius: 50%;
+    top: -300px;
+    right: -300px;
+    filter: blur(80px);
+  }
+  .pricing-content { position: relative; z-index: 2; }
+  .pricing .eyebrow { color: #8FB8FF; }
+  .pricing h2 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+  .pricing h2 em { font-style: normal; color: #4D8BFF; }
+  .pricing > .pricing-content > p {
+    color: #A8BCD8;
+    font-size: 1.05rem;
+    margin-bottom: 48px;
+  }
+  .price-card {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 24px;
+    padding: 48px 40px;
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .price-tag {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .price-tag .old-price {
+    font-size: 1.5rem;
+    color: #8FB8FF;
+    text-decoration: line-through;
+    font-weight: 600;
+    opacity: 0.7;
+  }
+  .price-tag .amount {
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: white;
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .price-tag .currency {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #8FB8FF;
+    align-self: flex-start;
+    margin-top: 12px;
+  }
+  .price-tag .period {
+    font-size: 1rem;
+    color: #A8BCD8;
+    font-weight: 600;
+  }
+  .price-note {
+    color: #8FB8FF;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 32px;
+  }
+  .price-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 36px;
+  }
+  .price-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  .price-features .check {
+    background: rgba(30,94,255,0.3);
+    border: 1px solid rgba(77,139,255,0.5);
+    color: #8FB8FF;
+  }
+  .price-cta {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, #1E5EFF, #4D8BFF);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    border-radius: 100px;
+    font-weight: 800;
+    font-size: 1.05rem;
+    transition: all 0.2s;
+    box-shadow: 0 12px 32px -8px rgba(30,94,255,0.6);
+  }
+  .price-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 40px -8px rgba(30,94,255,0.8);
+  }
+  .price-small {
+    text-align: center;
+    color: #8FB8FF;
+    font-size: 0.85rem;
+    margin-top: 20px;
+    font-weight: 500;
+  }
+
+  /* FAQ */
+  .faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  details {
+    background: white;
+    border: 1px solid #E6EEF8;
+    border-radius: 16px;
+    padding: 20px 28px;
+    transition: all 0.15s;
+  }
+  details[open] {
+    border-color: #CDDEFF;
+    box-shadow: 0 8px 24px -12px rgba(30,94,255,0.15);
+  }
+  summary {
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #0B1E30;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: #1E5EFF;
+    font-weight: 400;
+    transition: transform 0.2s;
+  }
+  details[open] summary::after { transform: rotate(45deg); }
+  details p {
+    margin-top: 14px;
+    font-size: 0.95rem;
+    color: #3D637F;
+    line-height: 1.6;
+  }
+
+  /* Final CTA */
+  .final-cta {
+    text-align: center;
+    padding: 100px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .final-cta h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    margin-bottom: 20px;
+  }
+  .final-cta h2 em { font-style: normal; color: #1E5EFF; }
+  .final-cta p {
+    font-size: 1.1rem;
+    color: #5C7C99;
+    margin-bottom: 40px;
+  }
+
+  /* ============================================
+     FOOTER
+  ============================================ */
+  .site-footer {
+    background: #0B1E30;
+    color: #A8BCD8;
+    padding: 60px 40px 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 1;
+  }
+  .site-footer .footer-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 24px;
+  }
+  .site-footer .footer-logo .logo-dot {
+    background: #1E5EFF;
+    box-shadow: 0 0 0 4px rgba(30,94,255,0.25);
+  }
+  .site-footer .footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+  }
+  .site-footer .footer-links a {
+    color: #A8BCD8;
+    text-decoration: none;
+    transition: color 0.15s;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .site-footer .footer-links a:hover { color: white; }
+  .site-footer .copy {
+    padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.85rem;
+    color: #7A96B3;
+  }
+
+  /* ============================================
+     RESPONSIVE — Tablet & Mobile
+  ============================================ */
+
+  /* Tablet (601–900px) */
+  @media (max-width: 900px) and (min-width: 601px) {
+    nav.top-nav { padding: 14px 24px; }
+    .nav-links { gap: 20px; font-size: 0.85rem; }
+
+    .hero {
+      grid-template-columns: 1fr;
+      padding: 70px 24px 60px;
+      gap: 60px;
+    }
+    .hero h1 { font-size: 2.8rem; }
+    .hero p { font-size: 1.05rem; }
+    .hero-visual { height: 460px; }
+    .hero-invoice { padding: 32px; max-width: 420px; }
+    .inv-title { font-size: 1.7rem; }
+
+    section { padding: 70px 24px; }
+    .section-head { margin-bottom: 48px; }
+    .section-head h2 { font-size: 2.2rem; }
+
+    /* Perfect for: 3 columns on tablet */
+    .perfect-for { padding: 32px 24px 48px; }
+    .perfect-for-list {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      max-width: 700px;
+    }
+    .perfect-for-list li {
+      padding: 22px 14px;
+      font-size: 0.92rem;
+    }
+    .pf-icon { width: 44px; height: 44px; }
+    .pf-icon svg { width: 22px; height: 22px; }
+
+    /* Comparison: 2 columns with smaller VS circle */
+    .compare-section { padding: 70px 24px; }
+    .comparison { gap: 20px; margin-top: 40px; }
+    .compare-card {
+      padding: 36px 28px;
+      border-radius: 22px;
+    }
+    .compare-header {
+      gap: 14px;
+      margin-bottom: 22px;
+      padding-bottom: 20px;
+    }
+    .compare-emoji {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      font-size: 24px;
+    }
+    .compare-header h3 { font-size: 1.3rem; }
+    .compare-list li { font-size: 0.92rem; gap: 10px; }
+    .check { width: 22px; height: 22px; }
+    .check svg { width: 12px; height: 12px; }
+    .compare-vs {
+      width: 56px;
+      height: 56px;
+      font-size: 0.92rem;
+      border-width: 5px;
+    }
+
+    .problem { padding: 60px 40px; border-radius: 28px; }
+    .pricing { padding: 70px 40px; margin: 0 24px; border-radius: 28px; }
+    .pricing h2 { font-size: 2.2rem; }
+    .price-tag .amount { font-size: 3.8rem; }
+    .final-cta h2 { font-size: 2.2rem; }
+    .site-footer { padding: 50px 24px 30px; }
+  }
+
+  /* Mobile (≤600px) */
+  @media (max-width: 600px) {
+    nav.top-nav { padding: 12px 16px; }
+    .nav-links { display: none; }
+    .logo { font-size: 1rem; }
+    .nav-cta { padding: 9px 16px; font-size: 0.82rem; }
+
+    .hero {
+      grid-template-columns: 1fr;
+      padding: 50px 16px 40px;
+      gap: 40px;
+    }
+    .hero-badge {
+      font-size: 0.72rem;
+      padding: 6px 14px;
+    }
+    .hero h1 { font-size: 2rem; line-height: 1.1; }
+    .hero p { font-size: 0.98rem; margin-bottom: 24px; }
+    .hero-cta { gap: 10px; margin-bottom: 18px; }
+    .btn-primary,
+    .btn-secondary {
+      padding: 14px 24px;
+      font-size: 0.92rem;
+      flex: 1;
+      justify-content: center;
+      min-width: 140px;
+    }
+    .hero-proof {
+      font-size: 0.78rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+    }
+    .hero-visual { height: 340px; }
+    .hero-invoice { padding: 22px; max-width: 100%; }
+    .hero-invoice::before { height: 6px; }
+    .inv-logo { width: 42px; height: 42px; font-size: 20px; }
+    .inv-title { font-size: 1.35rem; }
+    .inv-num { font-size: 0.72rem; }
+    .inv-row { font-size: 0.82rem; padding: 10px 0; }
+    .inv-total { font-size: 0.95rem; }
+    .inv-total span:first-child { font-size: 0.72rem; }
+    .inv-total span:last-child { font-size: 1.15rem; }
+    .hero-chip { font-size: 0.7rem; padding: 8px 14px; }
+    .hero-chip svg { width: 14px; height: 14px; }
+    .hero-chip.c1 { top: 10px; left: 0; }
+    .hero-chip.c2 { bottom: 30px; left: 10px; }
+    .hero-chip.c3 { bottom: 60px; right: -10px; }
+
+    /* Perfect for: 2 columns on mobile */
+    .perfect-for { padding: 28px 16px 40px; }
+    .perfect-for-label {
+      font-size: 0.72rem;
+      letter-spacing: 1.2px;
+      margin-bottom: 20px;
+    }
+    .perfect-for-list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      max-width: 100%;
+    }
+    .perfect-for-list li {
+      padding: 18px 10px;
+      font-size: 0.85rem;
+      gap: 8px;
+      border-radius: 16px;
+    }
+    .pf-icon { width: 38px; height: 38px; border-radius: 10px; }
+    .pf-icon svg { width: 18px; height: 18px; }
+
+    section { padding: 50px 16px; }
+    .section-head { margin-bottom: 36px; }
+    .section-head .eyebrow { font-size: 0.75rem; }
+    .section-head h2 { font-size: 1.7rem; line-height: 1.15; }
+    .section-head p { font-size: 0.98rem; }
+
+    .problem { padding: 36px 20px; border-radius: 20px; }
+    .problem-grid { gap: 16px; margin-top: 32px; }
+    .problem-card { padding: 24px 20px; }
+    .problem-icon { width: 42px; height: 42px; margin-bottom: 16px; }
+    .problem-icon svg { width: 22px; height: 22px; }
+    .problem-card h3 { font-size: 1.05rem; }
+    .problem-card p { font-size: 0.9rem; }
+
+    .features-grid { gap: 14px; }
+    .feature-card { padding: 26px 22px; }
+    .feature-icon { width: 48px; height: 48px; margin-bottom: 16px; }
+    .feature-icon svg { width: 24px; height: 24px; }
+    .feature-card h3 { font-size: 1.05rem; }
+    .feature-card p { font-size: 0.9rem; }
+
+    /* ============================================
+       COMPARISON — stack vertically on mobile
+    ============================================ */
+    .compare-section { padding: 50px 16px; }
+    .comparison {
+      grid-template-columns: 1fr;
+      gap: 0;
+      margin-top: 32px;
+    }
+    .compare-card {
+      padding: 28px 22px;
+      border-radius: 20px;
+    }
+    .compare-header {
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-bottom: 18px;
+    }
+    .compare-emoji {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      font-size: 22px;
+    }
+    .compare-header h3 { font-size: 1.2rem; }
+    .compare-header .sub { font-size: 0.72rem; }
+    .compare-list { gap: 12px; }
+    .compare-list li { font-size: 0.92rem; gap: 10px; }
+    .check { width: 22px; height: 22px; }
+    .check svg { width: 12px; height: 12px; }
+
+    /* VS becomes a circular separator between stacked cards */
+    .compare-vs {
+      width: 52px;
+      height: 52px;
+      font-size: 0.85rem;
+      margin: 16px auto;
+      border-width: 4px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Remove VS on very small screens to save space */
+    .compare-card.old {
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .compare-card.new {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .recommended-badge {
+      top: -12px;
+      right: 20px;
+      font-size: 0.62rem;
+      padding: 5px 12px;
+    }
+
+    .steps { gap: 28px; margin-top: 32px; }
+    .step-num { width: 54px; height: 54px; font-size: 1.25rem; margin-bottom: 14px; }
+    .step h3 { font-size: 1rem; }
+    .step p { font-size: 0.88rem; }
+
+    .pricing {
+      padding: 48px 20px;
+      margin: 0 12px;
+      border-radius: 20px;
+    }
+    .pricing h2 { font-size: 1.7rem; }
+    .pricing > .pricing-content > p { font-size: 0.95rem; margin-bottom: 32px; }
+    .price-card { padding: 32px 22px; }
+    .price-tag .amount { font-size: 3rem; }
+    .price-tag .currency { font-size: 1.2rem; }
+    .price-tag .period { font-size: 0.88rem; }
+    .price-features { gap: 12px; margin-bottom: 28px; }
+    .price-features li { font-size: 0.88rem; }
+    .price-cta { padding: 16px; font-size: 0.98rem; }
+    .price-small { font-size: 0.78rem; margin-top: 16px; }
+
+    .faq-list { gap: 10px; }
+    details { padding: 16px 20px; border-radius: 14px; }
+    summary { font-size: 0.92rem; }
+    summary::after { font-size: 1.3rem; }
+    details p { font-size: 0.88rem; margin-top: 12px; }
+
+    .final-cta { padding: 60px 16px 70px; }
+    .final-cta h2 { font-size: 1.7rem; }
+    .final-cta p { font-size: 0.98rem; margin-bottom: 28px; }
+
+    .site-footer { padding: 40px 20px 28px; font-size: 0.85rem; }
+    .site-footer .footer-logo { font-size: 1rem; margin-bottom: 20px; }
+    .site-footer .footer-links { gap: 18px; margin-bottom: 24px; }
+    .site-footer .footer-links a { font-size: 0.85rem; }
+    .site-footer .copy { padding-top: 24px; font-size: 0.78rem; line-height: 1.5; }
+  }
+
+  /* Very small phones (≤380px) */
+  @media (max-width: 380px) {
+    .hero h1 { font-size: 1.75rem; }
+    .hero p { font-size: 0.92rem; }
+    .btn-primary,
+    .btn-secondary {
+      padding: 12px 18px;
+      font-size: 0.85rem;
+      min-width: 120px;
+    }
+    .section-head h2 { font-size: 1.5rem; }
+    .pricing h2 { font-size: 1.5rem; }
+    .price-tag .amount { font-size: 2.6rem; }
+    .final-cta h2 { font-size: 1.5rem; }
+
+    .perfect-for { padding: 24px 12px 32px; }
+    .perfect-for-list { gap: 10px; }
+    .perfect-for-list li {
+      padding: 14px 8px;
+      font-size: 0.78rem;
+      border-radius: 14px;
+    }
+    .pf-icon { width: 34px; height: 34px; }
+    .pf-icon svg { width: 16px; height: 16px; }
+
+    /* Comparison — tighter on tiny screens */
+    .compare-section { padding: 40px 12px; }
+    .compare-card { padding: 24px 18px; }
+    .compare-emoji { width: 40px; height: 40px; font-size: 20px; }
+    .compare-header h3 { font-size: 1.1rem; }
+    .compare-list li { font-size: 0.86rem; }
+    .compare-vs {
+      width: 46px;
+      height: 46px;
+      font-size: 0.78rem;
+    }
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- ============================================
+     TOP NAVIGATION
+     Etsy link: https://www.etsy.com/listing/4590545999/invoice-generator-editable-template?ref=listings_manager_grid
+============================================ -->
+<nav class="top-nav" aria-label="Main navigation">
+  <a href="/" class="logo" aria-label="Invoice Pro home">
+    <span class="logo-dot" aria-hidden="true"></span>
+    Invoice Pro
+  </a>
+  <div class="nav-links">
+    <a href="#features">Features</a>
+    <a href="#compare">Compare</a>
+    <a href="#how">How it works</a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <a href="https://www.etsy.com/listing/4590545999/invoice-generator-editable-template?ref=listings_manager_grid"
+     class="nav-cta"
+     target="_blank"
+     rel="noopener">
+    Get it for $19
+  </a>
+</nav>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <div>
+    <div class="hero-badge">
+      <span class="dot" aria-hidden="true"></span>
+      One-time purchase · No subscription
+    </div>
+    <h1 id="hero-title">
+      Create a <em>professional invoice</em> in 60 seconds
+    </h1>
+    <p>
+      No Excel. No subscriptions. No sign-up. Just open the file, fill it in, and print — you get a perfect PDF every time.
+    </p>
+    <div class="hero-cta">
+      <a href="https://www.etsy.com/listing/4590545999/invoice-generator-editable-template?ref=listings_manager_grid"
+         class="btn-primary"
+         target="_blank"
+         rel="noopener"
+         aria-label="Buy Invoice Pro for $19 on Etsy">
+        Get Invoice Pro — $19
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+      <a href="#how" class="btn-secondary">See how it works</a>
+    </div>
+    <div class="hero-proof">
+      <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+      <span>Trusted by 500+ freelancers &amp; small businesses</span>
+    </div>
+  </div>
+
+  <div class="hero-visual" aria-hidden="true">
+    <div class="hero-invoice">
+      <div class="inv-head">
+        <div class="inv-logo">Y</div>
+        <div>
+          <div class="inv-title">Invoice</div>
+          <div class="inv-num">#INV-2025-001</div>
+        </div>
+      </div>
+      <div class="inv-row">
+        <span>SaaS subscription — Pro</span>
+        <strong>$398.00</strong>
+      </div>
+      <div class="inv-row">
+        <span>Onboarding &amp; setup</span>
+        <strong>$350.00</strong>
+      </div>
+      <div class="inv-row">
+        <span>Additional user seats</span>
+        <strong>$125.00</strong>
+      </div>
+      <div class="inv-total">
+        <span>Total Due</span>
+        <span>$873.00</span>
+      </div>
+    </div>
+
+    <div class="hero-chip c1">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+      </svg>
+      Instant PDF
+    </div>
+    <div class="hero-chip c2">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/>
+        <circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/>
+        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/>
+      </svg>
+      12 colors
+    </div>
+    <div class="hero-chip c3">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+      No sign-up
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PERFECT FOR
+============================================ -->
+<section class="perfect-for" aria-labelledby="perfect-for-title">
+  <p class="perfect-for-label" id="perfect-for-title">Perfect for</p>
+  <ul class="perfect-for-list" aria-label="Business types that use Invoice Pro">
+    <li>
+      <span class="pf-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+          <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+          <path d="M2 2l7.586 7.586"/>
+          <circle cx="11" cy="11" r="2"/>
+        </svg>
+      </span>
+      Freelancers
+    </li>
+    <li>
+      <span class="pf-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+          <circle cx="12" cy="13" r="3"/>
+        </svg>
+      </span>
+      Photographers
+    </li>
+    <li>
+      <span class="pf-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 7h-9"/>
+          <path d="M14 17H5"/>
+          <circle cx="17" cy="17" r="3"/>
+          <circle cx="7" cy="7" r="3"/>
+        </svg>
+      </span>
+      Consultants
+    </li>
+    <li>
+      <span class="pf-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+      </span>
+      Etsy Sellers
+    </li>
+    <li>
+      <span class="pf-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 4h6v6"/>
+          <path d="M20 4L9 15"/>
+          <path d="M20 14v6H4V4h6"/>
+        </svg>
+      </span>
+      Contractors
+    </li>
+    <li>
+      <span class="pf-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2"/>
+          <circle cx="9" cy="9" r="2"/>
+          <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+        </svg>
+      </span>
+      Studios
+    </li>
+  </ul>
+</section>
+
+<!-- PROBLEM -->
+<section aria-labelledby="problem-title">
+  <div class="problem">
+    <div class="section-head">
+      <div class="eyebrow">The problem</div>
+      <h2 id="problem-title">Spreadsheets weren't made for invoices</h2>
+      <p>Excel is great for data. It's terrible for sending a beautiful bill to a client.</p>
+    </div>
+
+    <div class="problem-grid">
+      <article class="problem-card">
+        <div class="problem-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="8" x2="12" y2="12"/>
+            <line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+        </div>
+        <h3>Formulas break</h3>
+        <p>Insert one row and your totals go to #REF!. Every. Single. Time.</p>
+      </article>
+
+      <article class="problem-card">
+        <div class="problem-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+          </svg>
+        </div>
+        <h3>Ugly PDF output</h3>
+        <p>Clients judge you on how your invoice looks. Excel's grid isn't a good look.</p>
+      </article>
+
+      <article class="problem-card">
+        <div class="problem-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="2" width="14" height="20" rx="2"/>
+            <line x1="12" y1="18" x2="12.01" y2="18"/>
+          </svg>
+        </div>
+        <h3>Broken on mobile</h3>
+        <p>Trying to send an invoice from your phone? Spreadsheets are a nightmare on small screens.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" aria-labelledby="features-title">
+  <div class="section-head">
+    <div class="eyebrow">Features</div>
+    <h2 id="features-title">Everything you need. <em>Nothing you don't.</em></h2>
+    <p>Every feature designed to save you time and make you look professional.</p>
+  </div>
+
+  <div class="features-grid">
+    <article class="feature-card">
+      <div class="feature-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+        </svg>
+      </div>
+      <h3>One-click PDF</h3>
+      <p>Perfect US Letter / A4 output. Ready to email, print, or archive.</p>
+    </article>
+
+    <article class="feature-card">
+      <div class="feature-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2"/>
+          <line x1="3" y1="9" x2="21" y2="9"/>
+          <line x1="9" y1="21" x2="9" y2="9"/>
+        </svg>
+      </div>
+      <h3>6 Templates</h3>
+      <p>Modern, Classic, Minimal, Bold, Elegant, and Compact.</p>
+    </article>
+
+    <article class="feature-card">
+      <div class="feature-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/>
+          <circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/>
+          <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/>
+        </svg>
+      </div>
+      <h3>12 Color Palettes</h3>
+      <p>Match your brand with presets. Or pick any custom hex color.</p>
+    </article>
+
+    <article class="feature-card">
+      <div class="feature-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+      </div>
+      <h3>Light &amp; Dark</h3>
+      <p>Choose invoice theme + editor theme. Adapts to any vibe.</p>
+    </article>
+
+    <article class="feature-card">
+      <div class="feature-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2"/>
+          <circle cx="9" cy="9" r="2"/>
+          <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+        </svg>
+      </div>
+      <h3>Logo &amp; signature</h3>
+      <p>Upload your logo and signature — instant brand polish.</p>
+    </article>
+
+    <article class="feature-card">
+      <div class="feature-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+          <polyline points="17 21 17 13 7 13 7 21"/>
+          <polyline points="7 3 7 8 15 8"/>
+        </svg>
+      </div>
+      <h3>Save &amp; reload</h3>
+      <p>Reuse invoices as JSON files. Perfect for recurring clients.</p>
+    </article>
+
+    <article class="feature-card">
+      <div class="feature-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="7"/>
+          <rect x="14" y="3" width="7" height="7"/>
+          <rect x="3" y="14" width="7" height="7"/>
+          <rect x="14" y="14" width="7" height="7"/>
+        </svg>
+      </div>
+      <h3>QR codes</h3>
+      <p>Embed payment links or info with an auto-generated QR.</p>
+    </article>
+
+    <article class="feature-card">
+      <div class="feature-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="9" y1="15" x2="15" y2="15"/>
+          <line x1="9" y1="18" x2="15" y2="18"/>
+        </svg>
+      </div>
+      <h3>Terms &amp; conditions</h3>
+      <p>Add legal text to every invoice — automatically.</p>
+    </article>
+
+    <article class="feature-card">
+      <div class="feature-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="18" cy="5" r="3"/>
+          <circle cx="6" cy="12" r="3"/>
+          <circle cx="18" cy="19" r="3"/>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+        </svg>
+      </div>
+      <h3>Social footer</h3>
+      <p>Link Instagram, LinkedIn, X, YouTube, GitHub — done.</p>
+    </article>
+
+    <article class="feature-card">
+      <div class="feature-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+          <polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+      </div>
+      <h3>Payment stamps</h3>
+      <p>Mark invoices PAID, VOID, OVERDUE, or DRAFT. Auto-styled.</p>
+    </article>
+
+    <article class="feature-card">
+      <div class="feature-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="3" width="20" height="14" rx="2"/>
+          <line x1="8" y1="21" x2="16" y2="21"/>
+          <line x1="12" y1="17" x2="12" y2="21"/>
+        </svg>
+      </div>
+      <h3>Works everywhere</h3>
+      <p>Windows, Mac, Linux, iPad, phone — any modern browser.</p>
+    </article>
+
+    <article class="feature-card">
+      <div class="feature-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="2" y1="12" x2="22" y2="12"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+      </div>
+      <h3>Works offline</h3>
+      <p>No internet needed. No cloud. Your data stays yours.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================
+     COMPARISON — Why Invoice Pro
+============================================ -->
+<section id="compare" class="compare-section" aria-labelledby="compare-title">
+  <div class="section-head">
+    <div class="eyebrow">Why Invoice Pro</div>
+    <h2 id="compare-title">What you get with <em>Invoice Pro</em></h2>
+    <p>See why freelancers are ditching spreadsheets and expensive SaaS tools.</p>
+  </div>
+
+  <div class="comparison">
+    <!-- OLD WAY -->
+    <article class="compare-card old" aria-labelledby="compare-old-title">
+      <header class="compare-header">
+        <div class="compare-emoji" aria-hidden="true">😩</div>
+        <div>
+          <h3 id="compare-old-title">Spreadsheet</h3>
+          <div class="sub">The old way</div>
+        </div>
+      </header>
+      <ul class="compare-list">
+        <li>
+          <span class="check x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+          <span>Broken formulas</span>
+        </li>
+        <li>
+          <span class="check x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+          <span>Ugly PDF output</span>
+        </li>
+        <li>
+          <span class="check x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+          <span>Manual formatting</span>
+        </li>
+        <li>
+          <span class="check x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+          <span>No templates</span>
+        </li>
+        <li>
+          <span class="check x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+          <span>Broken on mobile</span>
+        </li>
+        <li>
+          <span class="check x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+          <span>Looks amateur</span>
+        </li>
+      </ul>
+    </article>
+
+    <!-- VS divider -->
+    <div class="compare-vs" aria-hidden="true">VS</div>
+
+    <!-- NEW WAY -->
+    <article class="compare-card new" aria-labelledby="compare-new-title">
+      <span class="recommended-badge" aria-hidden="true">RECOMMENDED</span>
+      <header class="compare-header">
+        <div class="compare-emoji" aria-hidden="true">✨</div>
+        <div>
+          <h3 id="compare-new-title">Invoice Pro</h3>
+          <div class="sub">The new way</div>
+        </div>
+      </header>
+      <ul class="compare-list">
+        <li>
+          <span class="check v" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Auto-calculating totals</span>
+        </li>
+        <li>
+          <span class="check v" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Beautiful PDF in one click</span>
+        </li>
+        <li>
+          <span class="check v" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>6 pro layouts</span>
+        </li>
+        <li>
+          <span class="check v" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>12 color palettes + custom</span>
+        </li>
+        <li>
+          <span class="check v" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Works on any device</span>
+        </li>
+        <li>
+          <span class="check v" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Looks like a $30/mo SaaS</span>
+        </li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" aria-labelledby="how-title">
+  <div class="section-head">
+    <div class="eyebrow">How it works</div>
+    <h2 id="how-title">Ready in <em>4 simple steps</em></h2>
+    <p>No learning curve. No tutorials. Just open and go.</p>
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Download</h3>
+      <p>Get the file instantly after purchase. Save it anywhere.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>Open</h3>
+      <p>Double-click and it opens in your browser. No install needed.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Fill</h3>
+      <p>Type your details, add items, and the totals calculate themselves.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h3>Send</h3>
+      <p>Click "Save as PDF" and email it. Done in under 60 seconds.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" aria-labelledby="pricing-title">
+  <div class="pricing">
+    <div class="pricing-content">
+      <div class="section-head" style="margin-bottom: 40px;">
+        <div class="eyebrow" style="color: #8FB8FF;">Pricing</div>
+        <h2 id="pricing-title" style="color: white;">One payment. <em>Yours forever.</em></h2>
+        <p style="color: #A8BCD8;">Stop paying monthly subscriptions. Own your invoice tool.</p>
+      </div>
+
+      <div class="price-card">
+        <div class="price-tag">
+          <span class="currency">$</span>
+          <span class="amount">19</span>
+          <span class="period">one-time</span>
+        </div>
+        <div class="price-note">
+          <span style="text-decoration: line-through; opacity: 0.6;">Normally $39</span>
+          · Launch price
+        </div>
+        <ul class="price-features">
+          <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 1 HTML invoice builder file</li>
+          <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 6 invoice layouts</li>
+          <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 12 color palettes + custom</li>
+          <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Light + Dark themes</li>
+          <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Logo, signature, QR code</li>
+          <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Save/load + terms + socials</li>
+          <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Lifetime updates</li>
+        </ul>
+        <a href="https://www.etsy.com/listing/4590545999/invoice-generator-editable-template?ref=listings_manager_grid"
+           class="price-cta"
+           target="_blank"
+           rel="noopener"
+           aria-label="Download Invoice Pro now for $19 on Etsy">
+          Download now — $19
+        </a>
+        <div class="price-small">
+          💳 One-time payment · 🔒 Secure checkout · 📩 Instant delivery
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" aria-labelledby="faq-title">
+  <div class="section-head">
+    <div class="eyebrow">FAQ</div>
+    <h2 id="faq-title">Questions? <em>Answered.</em></h2>
+  </div>
+
+  <div class="faq-list">
+    <details open>
+      <summary>Do I need to install anything?</summary>
+      <p>No. Invoice Pro is a single HTML file. Just double-click it — it opens in your browser (Chrome, Safari, Firefox, Edge). No installation, no account, no internet needed.</p>
+    </details>
+
+    <details>
+      <summary>Will it work on my phone or tablet?</summary>
+      <p>Yes! It's fully responsive and works beautifully on phones, tablets, laptops, and desktops. You can create and send invoices from anywhere.</p>
+    </details>
+
+    <details>
+      <summary>Can I customize the colors to match my brand?</summary>
+      <p>Absolutely. Choose from 12 preset palettes or use the color picker to enter any hex color. The entire invoice updates live, including accents, tables, and stamps.</p>
+    </details>
+
+    <details>
+      <summary>How does the PDF export work?</summary>
+      <p>Click "Save as PDF / Print". Your browser's print dialog opens. Choose "Save as PDF" as the destination. The invoice is already formatted for US Letter / A4 — perfect one-page output.</p>
+    </details>
+
+    <details>
+      <summary>Can I reuse invoices for repeat clients?</summary>
+      <p>Yes. Use the Save button (JSON format) to store any invoice. Later, click Load to bring it back — all fields, logo, signature, and settings restored.</p>
+    </details>
+
+    <details>
+      <summary>Is this really a one-time payment?</summary>
+      <p>Yes. Pay $19 once. No subscriptions, no hidden fees, no upsells. You get the file and all future updates for life.</p>
+    </details>
+
+    <details>
+      <summary>Can I use it commercially?</summary>
+      <p>Yes. Use it for your own business, freelance work, agency, or clients. You can't resell or redistribute the file itself, but you can use it to bill as much as you want.</p>
+    </details>
+
+    <details>
+      <summary>What if I have an issue?</summary>
+      <p>Send me a message on Etsy. I usually reply within 24 hours and will help you get it working perfectly.</p>
+    </details>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" aria-labelledby="final-cta-title">
+  <h2 id="final-cta-title">Stop wrestling with <em>spreadsheets</em></h2>
+  <p>Get Invoice Pro today and send your next invoice in under 60 seconds.</p>
+  <a href="https://www.etsy.com/listing/4590545999/invoice-generator-editable-template?ref=listings_manager_grid"
+     class="btn-primary"
+     style="font-size: 1.1rem; padding: 20px 40px;"
+     target="_blank"
+     rel="noopener"
+     aria-label="Buy Invoice Pro now for $19 on Etsy">
+    Get Invoice Pro — $19
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <line x1="5" y1="12" x2="19" y2="12"/>
+      <polyline points="12 5 19 12 12 19"/>
+    </svg>
+  </a>
+</section>
+
+</main>
+
+<!-- ============================================
+     FOOTER
+============================================ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-logo">
+    <span class="logo-dot" aria-hidden="true"></span>
+    Invoice Pro
+  </div>
+  <div class="footer-links" role="navigation" aria-label="Footer navigation">
+    <a href="#features">Features</a>
+    <a href="#compare">Compare</a>
+    <a href="#how">How it works</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <div class="copy">
+    © 2025 Invoice Pro · All rights reserved. Made with ♥ for freelancers.
+  </div>
+</footer>
+
+<!-- ============================================
+     STRUCTURED DATA — Product Schema
+============================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Invoice Pro — Editable Invoice Generator",
+  "image": [
+    "https://yourdomain.com/images/invoice-pro-1.png",
+    "https://yourdomain.com/images/invoice-pro-2.png"
+  ],
+  "description": "Create professional invoices in 60 seconds. Editable HTML invoice generator with 6 templates, 12 color palettes, auto-calculating totals, and one-click PDF export. No Excel. No subscription.",
+  "sku": "INVOICE-PRO-V2",
+  "mpn": "INVOICE-PRO-V2",
+  "brand": {
+    "@type": "Brand",
+    "name": "Invoice Pro"
+  },
+  "category": "Business Software",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.etsy.com/listing/4590545999/invoice-generator-editable-template?ref=listings_manager_grid",
+    "priceCurrency": "USD",
+    "price": "19.00",
+    "priceValidUntil": "2026-12-31",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": {
+      "@type": "Organization",
+      "name": "Invoice Pro"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "500",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Sarah M."
+      },
+      "reviewBody": "Finally ditched Excel for my freelance invoices. This tool is incredibly polished and saves me hours every month."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "David K."
+      },
+      "reviewBody": "The 6 templates and color options make every invoice look like it came from a professional studio. Worth every penny."
+    }
+  ]
+}
+</script>
+
+<!-- ============================================
+     STRUCTURED DATA — FAQ Schema
+============================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need to install anything?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Invoice Pro is a single HTML file. Just double-click it and it opens in your browser (Chrome, Safari, Firefox, Edge). No installation, no account, no internet needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will it work on my phone or tablet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! It's fully responsive and works beautifully on phones, tablets, laptops, and desktops. You can create and send invoices from anywhere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize the colors to match my brand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Choose from 12 preset palettes or use the color picker to enter any hex color. The entire invoice updates live, including accents, tables, and stamps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the PDF export work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Click 'Save as PDF / Print'. Your browser's print dialog opens. Choose 'Save as PDF' as the destination. The invoice is already formatted for US Letter / A4."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this really a one-time payment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Pay $19 once. No subscriptions, no hidden fees, no upsells. You get the file and all future updates for life."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use it commercially?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Use it for your own business, freelance work, agency, or clients. You can't resell or redistribute the file itself."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- ============================================
+     STRUCTURED DATA — WebSite
+============================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Invoice Pro",
+  "url": "https://yourdomain.com/",
+  "description": "Editable invoice generator for freelancers and small businesses. Create professional PDF invoices in 60 seconds.",
+  "inLanguage": "en-US"
+}
+</script>
+
+</body>
+</html>
